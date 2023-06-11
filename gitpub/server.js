@@ -8,7 +8,7 @@ const app = express() // see express() to a variable
 
 
 //Middleware
-app.use(morgan("dev")) // Middleware
+app.use(morgan("dev")) //SETS UP OUT LOGGING MIDDLEWARE
 
 
 // Routes
@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-    res.send(drinks)
+    res.render("index.ejs")
 })
 
 
