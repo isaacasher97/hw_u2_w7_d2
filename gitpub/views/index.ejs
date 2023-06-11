@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitPub</title>
     <style>
+        h1 {
+            text-decoration: underline;
+            background-color: crimson;
+        }
         body {
             background-color: steelblue;
             color: blanchedalmond;
+            text-align: center;
         }
-        li::first-letter {
+        li:first-letter {
             text-transform: capitalize;
+        }
+        li > a {
+            text-decoration: none;
+            color: blanchedalmond;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        li > a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            display: inline;
         }
     </style>
 </head>
@@ -22,5 +41,5 @@
        <li><a href="/drinks/<%= i %>"><%= ` ${drinks[i].name} ` %></a></li> 
        <% } %>
     </ul>
-</body>
+</body> 
 </html>
