@@ -21,6 +21,10 @@ app.get("/drinks", (req, res) => {
     res.render("index.ejs", {drinks})
 })
 
+app.get("/drinks/:id", (req, res) => {
+    res.send(req.params.id)
+})
+
 // Listener
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
