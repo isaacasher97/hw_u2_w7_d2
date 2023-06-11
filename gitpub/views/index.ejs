@@ -10,9 +10,17 @@
             background-color: steelblue;
             color: blanchedalmond;
         }
+        li::first-letter {
+            text-transform: capitalize;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome To gitPub</h1>
+    <ul>
+        <% for(let i = 0; i < drinks.length; i++){ %> 
+       <li><%= ` ${drinks[i].name} ` %></li> 
+       <% } %>
+    </ul>
 </body>
 </html>
